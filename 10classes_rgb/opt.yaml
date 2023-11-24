@@ -1,0 +1,69 @@
+weights: yolov5m.pt
+cfg: ''
+data: data/facial_parts_10.yaml
+hyp:
+  lr0: 0.0072
+  lrf: 0.01118
+  momentum: 0.96952
+  weight_decay: 0.00057
+  warmup_epochs: 2.0469
+  warmup_momentum: 0.87197
+  warmup_bias_lr: 0.13514
+  box: 0.05269
+  cls: 0.43371
+  cls_pw: 0.74723
+  obj: 0.56711
+  obj_pw: 1.1892
+  iou_t: 0.2
+  anchor_t: 3.4274
+  fl_gamma: 0.0
+  hsv_h: 0.0107
+  hsv_s: 0.52782
+  hsv_v: 0.42373
+  degrees: 0.0
+  translate: 0.07382
+  scale: 0.48072
+  shear: 0.0
+  perspective: 0.0
+  flipud: 0.0
+  fliplr: 0.0
+  mosaic: 1.0
+  mixup: 0.0
+  copy_paste: 0.0
+  anchors: 3.5326
+epochs: 300
+batch_size: -1
+imgsz: 640
+rect: true
+resume: false
+nosave: false
+noval: false
+noautoanchor: false
+noplots: false
+evolve: null
+bucket: ''
+cache: null
+image_weights: false
+device: '3'
+multi_scale: false
+single_cls: false
+optimizer: SGD
+sync_bn: false
+workers: 8
+project: runs/train
+name: 10class_rgb
+exist_ok: false
+quad: false
+cos_lr: false
+label_smoothing: 0.0
+patience: 10
+freeze:
+- 0
+save_period: -1
+seed: 0
+local_rank: -1
+entity: null
+upload_dataset: false
+bbox_interval: -1
+artifact_alias: latest
+save_dir: runs/train/10class_rgb
