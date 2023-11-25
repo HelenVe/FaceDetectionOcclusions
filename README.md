@@ -64,7 +64,9 @@ We make sure that the validation set of MERL-RAV contains only annotated faces b
 ### Trained RGB Model - 10classes_rgb
 
 The trained model should be in yolov5/runs/train/trainedmodelname folder. The folder contains the model weights and training and validation plots. 
-The starting weights are the yolov5m weights. The YAML files specify the lication of the images and labels folders. 
+The starting weights are the yolov5m weights. Hyperparameter evolution for 42 generations to find optimal trainign params.  The YAML files specify the location of the images and labels folders. 
+
+
 
 ## B) Train second models to detect the missed faces of the 1st model
 
@@ -81,5 +83,7 @@ We have 4 trained models based on 4 ways to extract heatmaps:
 3) GradCAM++ and highlight pixels that account for all the detected classes (10 classes)
 4) HirsesCAM and highlight pixels that account for all the detected classes (10 classes)
 
+These can be found inside the models folder, along with training & validation results. 
+
 ## C) Take frames form the UMC videos, annotate and split them into 4 levels of occlusion based on the difficulty. 
-Test the 4 heatmap based model to see if more faces are detected. 
+Test the 4 heatmap based model to see if more faces are detected. HiresCAM models indeed detect more and are promising
