@@ -87,6 +87,8 @@ These can be found inside the models folder, along with training & validation re
 
 To do the heatmap extraction, go to file explain_pred.py and edit it based on how many classes you want to explain. The implementation is based on this blogpost: https://amirpourmand.ir/posts/2023/yolov5-interpretability-gradcam/
 
+That means that inside your yolov5 directory, you need to make a folder named "explainer" and copy explainer.py file. Only then will explain_pred.py run. 
+
 
 
 ## C) Take frames form the UMC videos, annotate and split them into 4 levels of occlusion based on the difficulty. 
