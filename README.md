@@ -1,6 +1,10 @@
 # FaceDetectionOcclusions
 UU AI MSc Thesis 2023-> Uncovering the invisible: Improving Face Detection Under Occlusions
 
+![image](https://github.com/HelenVe/FaceDetectionOcclusions/assets/34419631/cf94eeee-50ed-4de4-945d-4df3536ee467)
+
+
+
 ## A) Start by training a YOLOv5 model on generic facial landmark dataset 
 ### Datasets 
 
