@@ -20,6 +20,37 @@ For this reason I made two scripts that access the WFLW and MERL-RAV datasets, s
 split the files into train, validation and testing, perform visualization and create the "images" and "labels" folder. 
 You can call functions inside the code and run these files so you get the desired result. 
 
+The 10 classes are: 
+
+
+• eyes: the left and right eye are concatenated in one class as
+they are very similar and it would be very difficult to find
+their differences
+
+• nose
+
+• whole face: box ranging from above the brows to below the
+chin, and from leftmost to rightmost visible cheek
+
+• right face: box ranging from mid-ear until below chin, and
+from rightmost cheek landmark to right tip of mouth
+
+• left face: box ranging from mid-ear until below chin, and
+from leftmost cheek landmark to left tip of mouth
+
+• brows: box around both the brow area
+
+• left eye face: concatenation of the left eye and the left face
+landmark coordinates
+
+• right eye face: concatenation of the right eye and the right
+face landmark coordinates
+
+• eyes nose: concatenation of landmark coordinates of nose
+and both eyes
+
+• mouth: box around the mouth area
+
 ![Landmarks_Boxes](https://github.com/HelenVe/FaceDetectionOcclusions/assets/34419631/f184cf92-ff3d-4e4b-adf0-184c8b8da37c)
 
 You have landmarks like the image on the left and get bounding boxes on the right. 
